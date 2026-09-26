@@ -1,115 +1,76 @@
-const projects = [
-  {
-    name: 'Bookshop Website',
-    category: 'web',
-    type: 'Web Development',
-    language: 'HTML / XSL',
-    description: 'Responsive bookshop website built with structured XML/XSL content and a modern interface.',
-    link: 'https://github.com/zainab-arslan-dar/CST1340-Information-in-Organisation-CourseWork1',
-    date: 'Apr 2026'
-  },
-  {
-    name: 'Smart Vending Machine',
-    category: 'python',
-    type: 'System Design',
-    language: 'Python',
-    description: 'Interactive vending system with Tkinter, SQLite, and a client-server design.',
-    link: 'https://github.com/zainab-arslan-dar/CST1510_CourseWork1_Smart_Vending_Machine',
-    date: 'Apr 2026'
-  },
-  {
-    name: 'Medical Clinic App',
-    category: 'web',
-    type: 'Secure Web',
-    language: 'HTML / JS',
-    description: 'IndexedDB-powered medical clinic management application with CRUD operations.',
-    link: 'https://github.com/zainab-arslan-dar/CST2572_Secure_Web_Technology_Coursework1',
-    date: 'Apr 2026'
-  },
-  {
-    name: 'Cybersecurity Awareness Trivia',
-    category: 'cyber',
-    type: 'Cybersecurity',
-    language: 'HTML / JS',
-    description: 'Interactive learning project focused on digital safety and cyber awareness topics.',
-    link: 'https://github.com/zainab-arslan-dar/Cybersecurity-Awareness-Trivia',
-    date: 'Oct 2025'
-  },
-  {
-    name: 'Digital Forensics Case Report',
-    category: 'cyber',
-    type: 'Digital Forensics',
-    language: 'Report',
-    description: 'Evidence-based investigation and timeline reconstruction of a digital case study.',
-    link: 'https://github.com/zainab-arslan-dar/M57-Biz-Digital-Forensics-Case-Report',
-    date: 'Apr 2026'
-  },
-  {
-    name: 'Smart Home Security System',
-    category: 'iot',
-    type: 'IoT Security',
-    language: 'JavaScript',
-    description: 'IoT-based home monitoring system with intruder detection and alert automation.',
-    link: 'https://github.com/zainab-arslan-dar/Smart-Home-Security-System-With-Intruder-Detection-IoT',
-    date: 'Jun 2026'
-  }
-];
+# Zainab Arslan Dar | Portfolio
 
-const grid = document.getElementById('projectsGrid');
-const filterButtons = document.querySelectorAll('.filter-btn');
+A modern portfolio website for showcasing cybersecurity, web development, IoT, and software engineering projects.
 
-function createProjectCard(project) {
-  const card = document.createElement('article');
-  card.className = 'project-card';
+## Live Site
 
-  card.innerHTML = `
-    <div class="project-header">
-      <span class="project-type">${project.type}</span>
-      <span class="project-language">${project.language}</span>
-    </div>
-    <h3>${project.name}</h3>
-    <p>${project.description}</p>
-    <div class="project-footer">
-      <span class="project-date">${project.date}</span>
-      <a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">View →</a>
-    </div>
-  `;
+GitHub Pages deployment:
 
-  return card;
-}
+https://zainab-arslan-dar.github.io/portfolio
 
-function renderProjects(filter = 'all') {
-  if (!grid) return;
-  grid.innerHTML = '';
+## Overview
 
-  const visible = filter === 'all'
-    ? projects
-    : projects.filter((project) => project.category === filter);
+This portfolio is designed with a dark navy cyber aesthetic and features:
 
-  visible.forEach((project) => {
-    grid.appendChild(createProjectCard(project));
-  });
-}
+- modern landing page with a polished portfolio layout
+- project showcase cards with filtering by category
+- responsive design for desktop and mobile screen sizes
+- interactive UI elements and smooth visual presentation
+- contact section with GitHub and email links
 
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    filterButtons.forEach((btn) => btn.classList.remove('active'));
-    button.classList.add('active');
-    renderProjects(button.dataset.filter);
-  });
-});
+## Portfolio Theme
 
-const scrollEls = document.querySelectorAll('[data-scroll]');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.2 });
+- Dark blue and navy palette
+- Purple and cyan accents for a cyber/tech look
+- Clean glassmorphism-inspired panels
+- Spacious, elegant typography
 
-scrollEls.forEach((el) => observer.observe(el));
+## Tech Stack
 
-renderProjects();
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
 
+## Project Highlights Included
+
+- Bookshop Website
+- Smart Vending Machine
+- Medical Clinic Web App
+- Cybersecurity Awareness Trivia
+- Digital Forensics Case Report
+- Smart Home Security System
+- Programming Coursework
+
+## Contact
+
+- Email: zainabarslandar@gmail.com
+- GitHub: https://github.com/zainab-arslan-dar
+
+## Run Locally
+
+Open the `index.html` file directly in a browser, or run a local server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit:
+
+```text
+http://localhost:8000
+```
+
+## Repository Structure
+
+```text
+portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+```
+
+## Notes
+
+This project is meant to present your work in a neat, professional, and visually modern way while keeping the design consistent with your earlier portfolio reference.
