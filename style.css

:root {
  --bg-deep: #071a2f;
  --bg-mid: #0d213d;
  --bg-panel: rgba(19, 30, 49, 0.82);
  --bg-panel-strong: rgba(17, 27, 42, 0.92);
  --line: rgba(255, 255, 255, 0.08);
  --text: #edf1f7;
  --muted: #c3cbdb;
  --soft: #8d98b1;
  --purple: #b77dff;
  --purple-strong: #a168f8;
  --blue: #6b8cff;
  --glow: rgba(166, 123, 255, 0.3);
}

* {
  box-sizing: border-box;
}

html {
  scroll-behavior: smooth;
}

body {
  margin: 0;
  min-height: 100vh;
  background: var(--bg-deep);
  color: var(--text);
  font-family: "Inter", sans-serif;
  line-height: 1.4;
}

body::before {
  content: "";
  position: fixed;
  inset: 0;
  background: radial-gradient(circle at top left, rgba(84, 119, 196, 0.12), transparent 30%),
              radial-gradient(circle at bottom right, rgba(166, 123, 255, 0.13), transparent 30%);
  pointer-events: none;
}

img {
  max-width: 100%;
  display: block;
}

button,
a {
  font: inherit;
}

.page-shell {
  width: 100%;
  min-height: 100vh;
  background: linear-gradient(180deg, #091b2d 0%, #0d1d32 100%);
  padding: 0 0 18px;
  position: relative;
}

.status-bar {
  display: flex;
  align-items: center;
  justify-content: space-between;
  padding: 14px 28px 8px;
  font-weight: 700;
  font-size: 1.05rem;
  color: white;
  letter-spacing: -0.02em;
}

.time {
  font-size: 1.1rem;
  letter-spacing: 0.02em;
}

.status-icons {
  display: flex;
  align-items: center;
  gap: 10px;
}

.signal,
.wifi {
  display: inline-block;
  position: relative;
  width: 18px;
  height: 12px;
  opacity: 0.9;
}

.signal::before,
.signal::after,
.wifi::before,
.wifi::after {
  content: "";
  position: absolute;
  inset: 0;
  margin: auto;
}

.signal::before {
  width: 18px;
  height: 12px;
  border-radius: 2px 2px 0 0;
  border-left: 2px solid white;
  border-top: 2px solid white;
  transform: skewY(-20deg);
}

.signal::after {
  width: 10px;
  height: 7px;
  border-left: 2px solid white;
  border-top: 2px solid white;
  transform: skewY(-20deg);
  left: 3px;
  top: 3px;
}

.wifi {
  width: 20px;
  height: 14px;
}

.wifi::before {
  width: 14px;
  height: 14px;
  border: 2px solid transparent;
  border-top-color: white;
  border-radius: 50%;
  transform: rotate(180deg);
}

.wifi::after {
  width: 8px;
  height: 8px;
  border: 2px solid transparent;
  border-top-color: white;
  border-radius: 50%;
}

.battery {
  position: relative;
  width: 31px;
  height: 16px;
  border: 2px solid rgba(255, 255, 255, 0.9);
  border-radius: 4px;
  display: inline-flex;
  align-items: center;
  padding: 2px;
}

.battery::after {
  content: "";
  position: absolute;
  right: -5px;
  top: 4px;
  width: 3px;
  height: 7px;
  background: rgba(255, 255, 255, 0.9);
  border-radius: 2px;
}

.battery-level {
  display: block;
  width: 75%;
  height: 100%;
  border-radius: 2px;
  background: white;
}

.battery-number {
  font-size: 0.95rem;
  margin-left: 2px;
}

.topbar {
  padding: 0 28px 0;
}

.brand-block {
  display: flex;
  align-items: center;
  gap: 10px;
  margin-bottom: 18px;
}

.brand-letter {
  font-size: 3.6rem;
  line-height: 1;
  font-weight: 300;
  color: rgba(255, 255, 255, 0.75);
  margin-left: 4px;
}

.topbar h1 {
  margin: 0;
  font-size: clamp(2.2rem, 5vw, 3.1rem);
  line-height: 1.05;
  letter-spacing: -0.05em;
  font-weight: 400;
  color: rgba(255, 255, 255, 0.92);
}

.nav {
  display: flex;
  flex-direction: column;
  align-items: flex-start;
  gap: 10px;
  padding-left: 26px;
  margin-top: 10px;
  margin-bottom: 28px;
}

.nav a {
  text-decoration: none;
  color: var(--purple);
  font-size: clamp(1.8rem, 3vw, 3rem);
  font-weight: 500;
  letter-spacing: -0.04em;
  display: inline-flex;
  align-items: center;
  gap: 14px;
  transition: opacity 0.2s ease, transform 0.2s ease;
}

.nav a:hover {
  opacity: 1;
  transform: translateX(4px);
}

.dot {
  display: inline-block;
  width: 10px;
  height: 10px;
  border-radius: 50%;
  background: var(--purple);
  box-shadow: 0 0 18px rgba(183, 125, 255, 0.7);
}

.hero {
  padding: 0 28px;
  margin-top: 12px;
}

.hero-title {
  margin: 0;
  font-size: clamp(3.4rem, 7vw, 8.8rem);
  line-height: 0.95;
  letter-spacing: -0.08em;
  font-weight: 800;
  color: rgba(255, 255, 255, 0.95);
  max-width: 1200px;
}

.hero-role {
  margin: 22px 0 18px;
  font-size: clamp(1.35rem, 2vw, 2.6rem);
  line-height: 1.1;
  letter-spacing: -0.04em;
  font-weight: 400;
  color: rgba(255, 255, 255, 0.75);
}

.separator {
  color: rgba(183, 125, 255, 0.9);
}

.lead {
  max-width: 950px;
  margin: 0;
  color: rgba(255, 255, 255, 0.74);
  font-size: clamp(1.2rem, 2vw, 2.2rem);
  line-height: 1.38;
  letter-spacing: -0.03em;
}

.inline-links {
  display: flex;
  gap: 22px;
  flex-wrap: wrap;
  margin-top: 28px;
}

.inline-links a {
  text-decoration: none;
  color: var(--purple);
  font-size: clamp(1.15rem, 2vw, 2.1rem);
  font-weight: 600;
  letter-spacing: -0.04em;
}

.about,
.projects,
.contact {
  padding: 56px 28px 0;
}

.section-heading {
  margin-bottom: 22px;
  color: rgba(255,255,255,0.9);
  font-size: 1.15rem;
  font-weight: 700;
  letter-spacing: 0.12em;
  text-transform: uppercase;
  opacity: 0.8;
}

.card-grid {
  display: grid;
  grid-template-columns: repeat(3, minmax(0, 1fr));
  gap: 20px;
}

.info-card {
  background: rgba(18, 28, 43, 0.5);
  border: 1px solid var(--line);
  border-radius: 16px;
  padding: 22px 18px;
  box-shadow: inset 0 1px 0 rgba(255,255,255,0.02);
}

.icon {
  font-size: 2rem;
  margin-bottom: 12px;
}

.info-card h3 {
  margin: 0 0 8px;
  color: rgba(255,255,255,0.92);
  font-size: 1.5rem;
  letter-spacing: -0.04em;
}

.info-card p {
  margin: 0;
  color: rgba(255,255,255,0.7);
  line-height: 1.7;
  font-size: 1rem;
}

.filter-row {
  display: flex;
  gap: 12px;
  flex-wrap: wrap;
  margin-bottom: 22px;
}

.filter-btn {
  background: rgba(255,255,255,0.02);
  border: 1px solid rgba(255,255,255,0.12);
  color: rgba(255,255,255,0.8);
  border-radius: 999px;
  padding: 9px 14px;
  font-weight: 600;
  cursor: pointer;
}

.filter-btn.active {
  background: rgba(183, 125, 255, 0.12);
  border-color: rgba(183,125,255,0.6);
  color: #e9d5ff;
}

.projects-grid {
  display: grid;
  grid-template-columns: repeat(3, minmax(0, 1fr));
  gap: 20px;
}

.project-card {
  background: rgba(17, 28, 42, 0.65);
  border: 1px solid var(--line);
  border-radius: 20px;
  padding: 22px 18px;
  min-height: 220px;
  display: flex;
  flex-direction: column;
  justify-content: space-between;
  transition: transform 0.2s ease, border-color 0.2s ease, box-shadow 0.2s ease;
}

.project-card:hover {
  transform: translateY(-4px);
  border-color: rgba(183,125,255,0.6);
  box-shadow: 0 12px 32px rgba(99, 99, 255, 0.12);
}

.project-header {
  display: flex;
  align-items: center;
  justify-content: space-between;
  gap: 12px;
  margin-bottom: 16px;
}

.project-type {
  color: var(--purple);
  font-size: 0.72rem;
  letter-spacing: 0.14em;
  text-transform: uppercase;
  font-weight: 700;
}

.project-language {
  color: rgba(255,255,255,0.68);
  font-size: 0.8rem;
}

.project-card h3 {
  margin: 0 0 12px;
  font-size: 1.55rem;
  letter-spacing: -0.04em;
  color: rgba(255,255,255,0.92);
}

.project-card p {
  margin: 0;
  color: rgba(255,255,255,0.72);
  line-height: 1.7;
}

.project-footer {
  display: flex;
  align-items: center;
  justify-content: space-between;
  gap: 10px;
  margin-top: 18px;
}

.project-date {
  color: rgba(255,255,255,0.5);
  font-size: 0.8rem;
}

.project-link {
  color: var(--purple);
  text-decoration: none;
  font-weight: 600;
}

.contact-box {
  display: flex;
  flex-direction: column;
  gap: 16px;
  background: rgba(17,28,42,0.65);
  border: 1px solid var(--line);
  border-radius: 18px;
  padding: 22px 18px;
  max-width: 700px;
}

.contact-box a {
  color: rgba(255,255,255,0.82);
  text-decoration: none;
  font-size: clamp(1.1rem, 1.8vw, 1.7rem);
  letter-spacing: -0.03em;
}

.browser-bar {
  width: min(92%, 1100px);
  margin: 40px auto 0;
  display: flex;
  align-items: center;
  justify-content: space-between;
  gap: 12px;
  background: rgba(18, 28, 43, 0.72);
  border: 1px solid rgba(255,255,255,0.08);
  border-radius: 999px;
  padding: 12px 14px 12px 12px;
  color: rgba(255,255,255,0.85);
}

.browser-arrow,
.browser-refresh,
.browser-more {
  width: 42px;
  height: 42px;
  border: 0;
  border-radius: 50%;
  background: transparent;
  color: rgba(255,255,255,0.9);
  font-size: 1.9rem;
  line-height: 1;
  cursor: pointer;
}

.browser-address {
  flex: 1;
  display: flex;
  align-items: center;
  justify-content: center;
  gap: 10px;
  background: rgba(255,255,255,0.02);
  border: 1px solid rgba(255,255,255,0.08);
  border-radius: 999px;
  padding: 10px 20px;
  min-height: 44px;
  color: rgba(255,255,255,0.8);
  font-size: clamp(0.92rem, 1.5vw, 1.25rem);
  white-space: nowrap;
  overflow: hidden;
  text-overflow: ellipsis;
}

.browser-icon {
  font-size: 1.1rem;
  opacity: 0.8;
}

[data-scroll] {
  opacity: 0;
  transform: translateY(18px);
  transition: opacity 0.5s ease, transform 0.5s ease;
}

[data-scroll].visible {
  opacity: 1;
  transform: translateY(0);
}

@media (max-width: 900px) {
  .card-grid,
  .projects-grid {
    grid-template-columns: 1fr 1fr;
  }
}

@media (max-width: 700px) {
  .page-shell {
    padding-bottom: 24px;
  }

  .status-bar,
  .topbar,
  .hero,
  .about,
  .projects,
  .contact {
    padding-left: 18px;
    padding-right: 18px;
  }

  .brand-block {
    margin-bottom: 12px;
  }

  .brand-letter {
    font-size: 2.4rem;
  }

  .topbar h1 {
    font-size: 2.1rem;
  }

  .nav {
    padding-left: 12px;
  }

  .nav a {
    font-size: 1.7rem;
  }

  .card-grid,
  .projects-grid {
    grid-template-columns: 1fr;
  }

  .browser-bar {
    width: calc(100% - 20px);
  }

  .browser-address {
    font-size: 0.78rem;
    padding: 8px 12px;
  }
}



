@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zainab Arslan Dar | Portfolio</title>
+    <meta
+      name="description"
+      content="Cybersecurity engineer and creative technologist portfolio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="status-bar">
+        <span class="time">7:17</span>
+        <div class="status-icons" aria-label="status icons">
+          <span class="signal"></span>
+          <span class="wifi"></span>
+          <span class="battery">
+            <span class="battery-level"></span>
+          </span>
+          <span class="battery-number">71</span>
+        </div>
+      </div>
+
+      <header class="topbar" id="top">
+        <div class="brand-block">
+          <span class="brand-letter">Z</span>
+          <h1>Zainab Arslan Dar</h1>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home"><span class="dot"></span> Home</a>
+          <a href="#about"><span class="dot"></span> About</a>
+          <a href="#projects"><span class="dot"></span> Projects</a>
+          <a href="#contact"><span class="dot"></span> Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <h2 class="hero-title">Building Secure Systems</h2>
+
+          <p class="hero-role">
+            Cybersecurity Engineer <span class="separator">•</span> Full-Stack Developer
+            <span class="separator">•</span> IoT Architect
+          </p>
+
+          <p class="lead">
+            Crafting elegant, secure, and innovative solutions at the intersection of
+            cybersecurity, web development, and IoT technology.
+          </p>
+
+          <div class="inline-links">
+            <a href="#projects">Explore Projects</a>
+            <a href="#contact">Get in Touch</a>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="section-heading">About</div>
+          <div class="card-grid">
+            <article class="info-card" data-scroll>
+              <div class="icon">🔐</div>
+              <h3>Cybersecurity</h3>
+              <p>Secure architecture, digital forensics, and risk-aware engineering.</p>
+            </article>
+            <article class="info-card" data-scroll>
+              <div class="icon">💻</div>
+              <h3>Web Development</h3>
+              <p>Elegant, responsive, and user-focused web experiences.</p>
+            </article>
+            <article class="info-card" data-scroll>
+              <div class="icon">🔌</div>
+              <h3>IoT</h3>
+              <p>Connected systems and intelligent automation for modern living.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="section-heading">Projects</div>
+
+          <div class="filter-row" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="cyber">Cyber</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid"></div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="section-heading">Contact</div>
+          <div class="contact-box" data-scroll>
+            <a href="mailto:zainabarslandar@gmail.com">zainabarslandar@gmail.com</a>
+            <a href="https://github.com/zainab-arslan-dar" target="_blank" rel="noreferrer">github.com/zainab-arslan-dar</a>
+          </div>
+        </section>
+      </main>
+
+      <div class="browser-bar" aria-label="browser controls">
+        <button class="browser-arrow" aria-label="Back">&#8249;</button>
+        <div class="browser-address">
+          <span class="browser-icon">◫</span>
+          <span>zainab-arslan-dar.github.io</span>
+        </div>
+        <button class="browser-refresh" aria-label="Refresh">↻</button>
+        <button class="browser-more" aria-label="More">•••</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
