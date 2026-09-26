@@ -1,40 +1,46 @@
 // Projects Data
 const projectsData = [
     {
-        title: 'Penetration Testing Suite',
-        description: 'A comprehensive security testing toolkit for vulnerability assessment and penetration testing.',
-        type: 'security',
-        link: 'https://github.com/zainab-arslan-dar/project1'
-    },
-    {
-        title: 'Digital Forensics Analyzer',
-        description: 'Advanced tool for collecting, preserving, and analyzing digital evidence from various sources.',
+        title: 'M57-Biz Digital Forensics Case Report',
+        description: 'Digital forensics investigation of the M57.biz case, including timeline reconstruction, artifact analysis (LNK, Prefetch), and evidence-based incident reporting.',
         type: 'forensics',
-        link: 'https://github.com/zainab-arslan-dar/project2'
+        language: 'Markdown',
+        link: 'https://github.com/zainab-arslan-dar/M57-Biz-Digital-Forensics-Case-Report'
     },
     {
-        title: 'Secure Chat Application',
-        description: 'End-to-end encrypted messaging application with zero-knowledge architecture.',
-        type: 'development',
-        link: 'https://github.com/zainab-arslan-dar/project3'
-    },
-    {
-        title: 'Network Traffic Monitor',
-        description: 'Real-time network analysis tool for detecting anomalies and suspicious activities.',
+        title: 'Smart Home Security System With Intruder Detection IoT',
+        description: 'Intelligent Home Monitoring System using IoT. Detects intrusions, verifies access with RFID, and triggers alarms, OLED alerts, and a servo door with cloud connectivity.',
         type: 'security',
-        link: 'https://github.com/zainab-arslan-dar/project4'
+        language: 'JavaScript',
+        link: 'https://github.com/zainab-arslan-dar/Smart-Home-Security-System-With-Intruder-Detection-IoT'
     },
     {
-        title: 'File Integrity Checker',
-        description: 'Advanced file hashing and integrity verification system for forensic analysis.',
-        type: 'forensics',
-        link: 'https://github.com/zainab-arslan-dar/project5'
+        title: 'Project Management & Compliance Coursework Report',
+        description: 'Smart Home estate design project developed for a Project Management & Compliance Cybersecurity module, integrating IoT solutions across family and warden-assisted homes.',
+        type: 'security',
+        language: 'Documentation',
+        link: 'https://github.com/zainab-arslan-dar/Project-Management-Compliance-Coursework2-Report'
     },
     {
-        title: 'Secure Password Manager',
-        description: 'Military-grade password management solution with biometric authentication.',
+        title: 'Secure Medical Clinic Web Application',
+        description: 'Full-featured Medical Clinic Web Application using IndexedDB for offline storage. Supports multiple stores (patients, doctors, admins, appointments, medical records) with secure role management.',
         type: 'development',
-        link: 'https://github.com/zainab-arslan-dar/project6'
+        language: 'HTML',
+        link: 'https://github.com/zainab-arslan-dar/CST2572_Secure_Web_Technology_Coursework1'
+    },
+    {
+        title: 'Smart Vending Machine Application',
+        description: 'Smart Vending Machine project with a Tkinter GUI, SQLite database, and client-server architecture enabling product browsing, cart management, inventory tracking, and transaction history.',
+        type: 'development',
+        language: 'Python',
+        link: 'https://github.com/zainab-arslan-dar/CST1510_CourseWork1_Smart_Vending_Machine'
+    },
+    {
+        title: 'XML/XSL Bookshop Web Application',
+        description: 'Responsive bookshop website developed as part of the CST1340 Web Development module, demonstrating integration of XML and XSL front-end rendering techniques.',
+        type: 'development',
+        language: 'HTML',
+        link: 'https://github.com/zainab-arslan-dar/CST1340-Information-in-Organisation-CourseWork1'
     }
 ];
 
@@ -54,13 +60,13 @@ function renderProjects(filter = 'all') {
         projectCard.innerHTML = `
             <div class="project-header">
                 <span class="project-type">${project.type}</span>
-                <span class="project-language">GitHub</span>
+                <span class="project-language">${project.language}</span>
             </div>
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="project-footer">
-                <a href="${project.link}" target="_blank" class="project-link">
-                    View Project
+                <a href="${project.link}" target="_blank" class="project-link" rel="noopener noreferrer">
+                    View Repository
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
