@@ -1,178 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zainab Arslan Dar | Portfolio</title>
-    <meta
-      name="description"
-      content="Modern interactive portfolio for Zainab Arslan Dar featuring cybersecurity, web development, IoT, and software projects."
-    />
+    <meta name="description" content="Cybersecurity engineer & creative technologist. Interactive portfolio showcasing secure systems, IoT solutions, and elegant web experiences." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <div class="bg-glow glow-1"></div>
-      <div class="bg-glow glow-2"></div>
-      <div class="bg-glow glow-3"></div>
-
-      <header class="topbar">
-        <div class="brand-wrap">
-          <div class="brand-mark">Z</div>
-          <div>
-            <p class="brand-name">Zainab Arslan Dar</p>
-            <span class="brand-tag">Developer • Security • Creative Technologist</span>
-          </div>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">Z</div>
+                <span>Zainab Arslan Dar</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
 
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#stack">Stack</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="hero" id="about">
-          <div class="hero-copy">
-            <p class="eyebrow">Building intelligent digital experiences</p>
-            <h1>
-              I design <span class="gradient-text">secure, modern</span> systems that
-              solve real problems.
-            </h1>
-            <p class="lead">
-              I’m a multidisciplinary developer focused on cybersecurity, web
-              applications, IoT, and practical software engineering. I build
-              interfaces and systems that are both functional and memorable.
-            </p>
-
-            <div class="cta-row">
-              <a class="primary-btn" href="#projects">View Projects</a>
-              <a class="secondary-btn" href="https://github.com/zainab-arslan-dar" target="_blank" rel="noreferrer">GitHub Profile</a>
-            </div>
-
-            <div class="stats-grid">
-              <div class="stat-box">
-                <strong>10+</strong>
-                <span>Public projects</span>
-              </div>
-              <div class="stat-box">
-                <strong>6</strong>
-                <span>Tech areas</span>
-              </div>
-              <div class="stat-box">
-                <strong>100%</strong>
-                <span>Curiosity-driven</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="orbit orbit-1"></div>
-            <div class="orbit orbit-2"></div>
-            <div class="profile-card">
-              <div class="avatar-ring">
-                <div class="avatar-inner">Z</div>
-              </div>
-              <div class="status-row">
-                <span class="dot"></span>
-                <span>Available for projects</span>
-              </div>
-              <ul class="mini-list">
-                <li>Cybersecurity</li>
-                <li>Web Apps</li>
-                <li>IoT Systems</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-header">
-          <p class="eyebrow">What I work with</p>
-          <h2>Tech stack and creative focus</h2>
-        </section>
-
-        <section class="stack-strip" id="stack">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Python</span>
-          <span>C</span>
-          <span>SQL</span>
-          <span>IoT</span>
-          <span>Cybersecurity</span>
-          <span>Web Security</span>
-          <span>UI/UX</span>
-        </section>
-
-        <section class="projects-section" id="projects">
-          <div class="section-header project-header">
-            <div>
-              <p class="eyebrow">Portfolio</p>
-              <h2>Featured GitHub projects</h2>
-            </div>
-            <div class="filter-group" aria-label="Project filter buttons">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="web">Web</button>
-              <button class="filter-btn" data-filter="python">Python</button>
-              <button class="filter-btn" data-filter="cyber">Cyber</button>
-              <button class="filter-btn" data-filter="iot">IoT</button>
-              <button class="filter-btn" data-filter="report">Reports</button>
-            </div>
-          </div>
-
-          <div class="projects-grid" id="projectsGrid"></div>
-        </section>
-
-        <section class="about-panel">
-          <div class="panel-copy">
-            <p class="eyebrow">Approach</p>
-            <h3>Smart ideas, polished execution.</h3>
-            <p>
-              My work blends creative presentation with practical, secure building.
-              I enjoy working on interactive dashboards, educational experiences,
-              and technical solutions that make complex ideas easy to use and understand.
-            </p>
-          </div>
-          <div class="feature-list">
-            <div>
-              <span>01</span>
-              <h4>Front-end creativity</h4>
-            </div>
-            <div>
-              <span>02</span>
-              <h4>Problem-oriented coding</h4>
-            </div>
-            <div>
-              <span>03</span>
-              <h4>Security-minded thinking</h4>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer" id="contact">
-        <div>
-          <p class="eyebrow">Let’s connect</p>
-          <h3>Open to new ideas, projects, and collaborations.</h3>
-        </div>
-        <div class="footer-actions">
-          <a href="https://github.com/zainab-arslan-dar" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="mailto:zainab.arslan.dar@gmail.com">Email</a>
-        </div>
-      </footer>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-particle" id="particle1"></div>
+        <div class="bg-particle" id="particle2"></div>
+        <div class="bg-particle" id="particle3"></div>
+        <div class="bg-glow" id="glow1"></div>
+        <div class="bg-glow" id="glow2"></div>
+        <div class="bg-glow" id="glow3"></div>
     </div>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" id="heroTitle">
+                        <span class="word">Building</span>
+                        <span class="word">Secure</span>
+                        <span class="word">Systems</span>
+                    </h1>
+                    <p class="hero-subtitle">Cybersecurity Engineer • Full-Stack Developer • IoT Architect</p>
+                    <p class="hero-description">
+                        Crafting elegant, secure, and innovative solutions at the intersection of cybersecurity, web development, and IoT technology.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hologram" id="hologram">
+                        <div class="hologram-inner">
+                            <div class="cube" id="cube"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <h2 class="section-title" data-scroll>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-item" data-scroll>
+                        <div class="item-icon">🔐</div>
+                        <h3>Cybersecurity</h3>
+                        <p>Expertise in secure architecture, penetration testing, digital forensics, and risk management.</p>
+                    </div>
+                    <div class="about-item" data-scroll>
+                        <div class="item-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive, interactive web applications with modern frameworks and vanilla JavaScript.</p>
+                    </div>
+                    <div class="about-item" data-scroll>
+                        <div class="item-icon">🔌</div>
+                        <h3>IoT & Systems</h3>
+                        <p>Designing connected devices, automation systems, and intelligent home security solutions.</p>
+                    </div>
+                    <div class="about-item" data-scroll>
+                        <div class="item-icon">🚀</div>
+                        <h3>Innovation</h3>
+                        <p>Constantly exploring new technologies and pushing boundaries in tech and engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack">
+            <div class="section-container">
+                <h2 class="section-title" data-scroll>Tech Stack</h2>
+                <div class="tech-categories">
+                    <div class="tech-category" data-scroll>
+                        <h3>Languages</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="tech-category" data-scroll>
+                        <h3>Security & Systems</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Cryptography</span>
+                            <span class="tech-tag">Penetration Testing</span>
+                            <span class="tech-tag">Digital Forensics</span>
+                            <span class="tech-tag">Risk Management</span>
+                            <span class="tech-tag">OWASP</span>
+                        </div>
+                    </div>
+                    <div class="tech-category" data-scroll>
+                        <h3>Tools & Platforms</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Git/GitHub</span>
+                            <span class="tech-tag">IoT Platforms</span>
+                            <span class="tech-tag">Database Design</span>
+                            <span class="tech-tag">IndexedDB</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-container">
+                <h2 class="section-title" data-scroll>Featured Projects</h2>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="cyber">Cyber</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                </div>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="contact-content" data-scroll>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-subtitle">I'm always interested in discussing new projects, cybersecurity innovations, and engineering challenges.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:zainabarslandar@gmail.com" class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-info">
+                                <h3>Email</h3>
+                                <p>zainabarslandar@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/zainab-arslan-dar" target="_blank" rel="noreferrer" class="contact-method">
+                            <div class="method-icon">🔗</div>
+                            <div class="method-info">
+                                <h3>GitHub</h3>
+                                <p>github.com/zainab-arslan-dar</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Zainab Arslan Dar. All rights reserved.</p>
+            <p>Building secure systems, one line of code at a time.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
-
-
-

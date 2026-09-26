@@ -1,33 +1,69 @@
-# Zainab Arslan Dar Portfolio
+# Zainab Arslan Dar - Interactive Portfolio
 
-A modern interactive portfolio website showcasing my GitHub projects in cybersecurity, web development, IoT, and technical coursework.
+A modern, interactive portfolio website showcasing my work in cybersecurity, web development, and IoT systems.
 
-## Run locally
+## Features
 
-Open `index.html` directly in a browser, or use a simple local server:
+✨ **Interactive Design**
+- Smooth scroll animations and parallax effects
+- Holographic 3D cube with perspective transforms
+- Dynamic particle system following mouse movement
+- Animated background glows and transitions
 
-```bash
-python3 -m http.server 8000
-```
+🎨 **Modern Aesthetic**
+- Navy blue and cyan cybersecurity/space theme
+- Glassmorphism UI elements with backdrop blur
+- Neon glow effects and gradients
+- Responsive design for all devices
 
-Then visit:
+🚀 **Featured Projects**
+- Web Applications (Medical Clinic, Bookshop)
+- Python Systems (Smart Vending Machine)
+- IoT Security Solutions
+- Cybersecurity & Forensics
+- Dynamic filtering by category
 
-```text
-http://localhost:8000
-```
+📱 **Responsive & Accessible**
+- Mobile-friendly navigation
+- Touch-optimized interactions
+- Semantic HTML structure
+- Performance optimized
 
-## Project list included
+## Tech Stack
 
-- Bookshop website
-- Programming coursework
-- Smart vending machine
-- Secure clinic web app
-- Cybersecurity awareness trivia
-- Digital forensics report
-- IoT smart home security system
-- Research and compliance project reports
+- **HTML5** - Semantic structure
+- **CSS3** - Modern animations and gradients
+- **Vanilla JavaScript** - Interactive features
+- **GitHub Pages** - Hosting
 
-## GitHub
+## How to View
 
-https://github.com/zainab-arslan-dar
+### Live Website
+https://zainab-arslan-dar.github.io/portfolio
 
+### Local Development
+1. Clone the repository
+2. Open `index.html` in a browser
+3. Or use a local server:
+   ```bash
+   python3 -m http.server 8000
+   # Visit http://localhost:8000
+   ```
+
+## Projects Included
+
+- **Smart Home Security System** - IoT intrusion detection with cloud connectivity
+- **Medical Clinic Web App** - IndexedDB-based management system
+- **Cybersecurity Awareness Trivia** - Educational security platform
+- **Smart Vending Machine** - Full-stack Python application
+- **Digital Forensics Case Analysis** - M57.biz investigation report
+- **And more...**
+
+## Contact
+
+📧 **Email:** zainabarslandar@gmail.com
+🔗 **GitHub:** https://github.com/zainab-arslan-dar
+
+---
+
+*Building secure systems, one line of code at a time.*
