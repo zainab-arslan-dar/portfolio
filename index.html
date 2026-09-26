@@ -1,180 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zainab Arslan Dar - Cybersecurity & Digital Forensics</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zainab Arslan Dar — Cybersecurity & Digital Forensics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">ZAD</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Zainab Arslan Dar</span>
-                </h1>
-                <p class="hero-subtitle">Cybersecurity & Digital Forensics Specialist</p>
-                <p class="hero-description">
-                    Final year student passionate about creating and building unique security solutions. 
-                    I love exploring vulnerabilities, crafting secure systems, and making the digital world safer.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="animated-cube"></div>
-            </div>
-        </div>
-    </section>
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="brand">ZAD<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a final year <span class="highlight">Cybersecurity and Digital Forensics</span> student 
-                        with a passion for building innovative security solutions and exploring the intersection of technology and security.
-                    </p>
-                    <p>
-                        My journey in tech has taught me that the best solutions come from understanding both the challenges 
-                        and the creative ways to overcome them. Whether it's penetration testing, forensic analysis, or building 
-                        secure applications, I bring dedication and curiosity to every project.
-                    </p>
-                    <p>
-                        I love creating <span class="highlight">unique and functional</span> digital experiences while maintaining 
-                        security best practices. Always eager to learn, experiment, and push boundaries.
-                    </p>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Cybersecurity</h3>
-                        <p>Penetration Testing & Vulnerability Assessment</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-microscope"></i>
-                        <h3>Digital Forensics</h3>
-                        <p>Evidence Collection & Analysis</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Development</h3>
-                        <p>Secure Coding & Application Security</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database"></i>
-                        <h3>Data Protection</h3>
-                        <p>Encryption & Privacy Solutions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Available for internships & research roles</div>
+      <h1>Zainab Arslan Dar</h1>
+      <p class="role">Cybersecurity & Digital Forensics</p>
+      <p class="desc">Final-year student who traces evidence, breaks assumptions, and builds systems that hold up under attack. I work across penetration testing, forensic analysis, and secure application design.</p>
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div class="net-wrap">
+      <svg viewBox="0 0 400 400">
+        <circle class="net-ring" cx="200" cy="200" r="150"/>
+        <circle class="net-ring" cx="200" cy="200" r="100"/>
+        <g id="netLines"></g>
+        <g id="netNodes"></g>
+      </svg>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="security">Security</button>
-                <button class="filter-btn" data-filter="forensics">Forensics</button>
-                <button class="filter-btn" data-filter="development">Development</button>
-            </div>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be loaded here by JavaScript -->
-            </div>
-        </div>
-    </section>
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <span class="tag" style="color:var(--cyan); font-weight:600; font-size:0.85rem;">About</span>
+      <h2 style="margin-bottom:1.3rem;">Curiosity, applied carefully</h2>
+      <p>I'm a <b>Cybersecurity and Digital Forensics</b> student who likes taking systems apart to understand exactly how they break — and how to stop that from happening to someone else.</p>
+      <p>My work spans forensic case reconstruction, IoT intrusion detection, and secure web application design. Each project starts the same way: understand the threat model first, then build.</p>
+      <p>Outside coursework, I compete in CTFs and hackathons, and I'm currently pursuing research work in <b>AI-assisted forensic evidence triage</b>.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fas fa-shield-halved"></i><h3>Cybersecurity</h3><p>Penetration testing & vulnerability assessment</p></div>
+      <div class="skill-card"><i class="fas fa-magnifying-glass-chart"></i><h3>Digital Forensics</h3><p>Evidence collection & timeline analysis</p></div>
+      <div class="skill-card"><i class="fas fa-code"></i><h3>Development</h3><p>Secure coding & application security</p></div>
+      <div class="skill-card"><i class="fas fa-lock"></i><h3>Data Protection</h3><p>Encryption & privacy-first design</p></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
-            
-            <div class="contact-methods">
-                <a href="mailto:zainabarslandar@gmail.com" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>zainabarslandar@gmail.com</p>
-                    <span class="contact-hover">Send me an email</span>
-                </a>
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Selected work</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="forensics">Forensics</button>
+      <button class="filter-btn" data-filter="development">Development</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
 
-                <a href="https://linkedin.com/in/zainabarslandar/" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <p>zainabarslandar</p>
-                    <span class="contact-hover">Connect on LinkedIn</span>
-                </a>
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head" style="text-align:center;">
+      <span class="tag">Get in touch</span>
+      <h2>Let's connect</h2>
+    </div>
+    <div class="contact-cards">
+      <a href="mailto:zainabarslandar@gmail.com" class="contact-card">
+        <i class="fas fa-envelope"></i><h3>Email</h3><p>zainabarslandar@gmail.com</p>
+      </a>
+      <a href="https://linkedin.com/in/zainabarslandar/" target="_blank" class="contact-card">
+        <i class="fab fa-linkedin"></i><h3>LinkedIn</h3><p>zainabarslandar</p>
+      </a>
+      <a href="https://github.com/zainab-arslan-dar" target="_blank" class="contact-card">
+        <i class="fab fa-github"></i><h3>GitHub</h3><p>zainab-arslan-dar</p>
+      </a>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="field"><input type="text" placeholder="Your name" required></div>
+      <div class="field"><input type="email" placeholder="Your email" required></div>
+      <div class="field"><textarea rows="5" placeholder="Your message" required></textarea></div>
+      <button type="submit" class="btn btn-primary" style="align-self:center;">Send message</button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </div>
+</section>
 
-                <a href="https://github.com/zainab-arslan-dar" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>GitHub</h3>
-                    <p>zainab-arslan-dar</p>
-                    <span class="contact-hover">View my repositories</span>
-                </a>
-            </div>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://github.com/zainab-arslan-dar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/zainabarslandar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:zainabarslandar@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2026 Zainab Arslan Dar. Building secure systems with curiosity.</p>
+  </div>
+</footer>
 
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Zainab Arslan Dar. All rights reserved. | Building secure solutions with passion.</p>
-            <div class="social-links">
-                <a href="https://github.com/zainab-arslan-dar" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/zainabarslandar/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:zainabarslandar@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
